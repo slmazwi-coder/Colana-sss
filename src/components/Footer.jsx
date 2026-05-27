@@ -16,12 +16,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
 
           <div className="sm:col-span-2 lg:col-span-1">
-            <p className="font-display text-xl font-bold mb-1" style={{ color: '#DAA520' }}>
-              Colana SSS
-            </p>
-            <p className="text-sm italic mb-4" style={{ color: 'rgba(218,165,32,0.55)' }}>
-              "{SCHOOL.motto}"
-            </p>
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src="/assets/logo.png"
+                alt="Colana SSS Logo"
+                className="w-14 h-14 rounded-lg object-contain shrink-0"
+              />
+              <div>
+                <p className="font-display text-xl font-bold leading-tight" style={{ color: '#DAA520' }}>
+                  Colana SSS
+                </p>
+                <p className="text-xs italic leading-tight mt-0.5" style={{ color: 'rgba(218,165,32,0.55)' }}>
+                  {SCHOOL.motto}
+                </p>
+              </div>
+            </div>
             <div className="flex gap-3">
               <a
                 href={SCHOOL.facebook}
